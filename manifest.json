@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "es6-on-chrome-extention-starter",
+    "description": "",
+    "version": "0.0.0",
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "matches": ["http://play.pokemonshowdown.com/*"],
+            "js": [
+                "dist/bundle.js"
+            ]
+        }
+    ]
+}
